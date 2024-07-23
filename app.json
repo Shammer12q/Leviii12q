@@ -1,6 +1,6 @@
 {
-  "name": "SCENE-MD",
-  "description": "SCENE-MD was developed by Beltah.",
+  "name": "RIFFLE-MD",
+  "description": "RIFFLE-MD was developed by Beltah.",
   "keywords": [
     "bot",
     "node",
@@ -8,7 +8,7 @@
     "whatsapp"
   ],
   "logo": "https://telegra.ph/file/305827be2080296d1ab2d.jpg",
-  "repository": "https://github.com/Airforce254/SCENE-MD",
+  "repository": "https://github.com/Beltahmod2/RIFFLE-MD",
   "succes_url": "/",
   "stack": "container",
   "env": {
@@ -44,7 +44,7 @@
     },
     "PUBLIC_MODE": {
       "description": "type yes to put your bot on public mode or no to put it on private mod",
-      "value": "yes",
+      "value": "no",
       "required": false
     },
     "HEROKU_APY_KEY": {
