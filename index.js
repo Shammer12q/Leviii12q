@@ -853,14 +853,16 @@ ${metadata.desc}\n\n> POWERED BY BELTAH TECH TEAM.`;
                 await activateCrons();
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
-                let cmsg = `★ SCENE MD IS RUNNING NOW ★
+                let cmsg = `𝐒𝐂𝐄𝐍𝐄-𝐌𝐃-𝐕𝟐 𝐈𝐒 𝐎𝐍𝐋𝐈𝐍𝐄 ⏳
     
-    Prefix : [ ${prefixe} ]
-    Mode :${md} mode
-    Total Command : ${evt.cm.length}
-    Owner : Beltah Tech 254 🇰🇪  
+    𝗣𝗿𝗲𝗳𝗶𝘅 : [ ${prefixe} ]
+    𝗠𝗼𝗱𝗲 :${md} mode
+    𝗣𝗹𝘂𝗴𝗶𝗻𝘀 : 245
+    𝗥𝗮𝗺 : 𝟲𝟴/𝟭𝟯𝟮 𝗚𝗕
+    𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : 𝗖𝗵𝗿𝗼𝗺𝗲 𝗟𝗶𝗻𝘂𝘅
+    𝗖𝗿𝗲𝗮𝘁𝗼𝗿 : 𝗕𝗲𝗹𝘁𝗮𝗵 𝗧𝗲𝗰𝗵 𝟮𝟱𝟰 🇰🇪  
 
-> THANK YOU FOR LOVING SCENE-MD.\n`;
+> 𝐓𝐡𝐚𝐧𝐤 𝐲𝐨𝐮 𝐟𝐨𝐫 𝐃𝐞𝐩𝐥𝐨𝐲𝐢𝐧𝐠 𝐒𝐂𝐄𝐍𝐄-𝐌𝐃-𝐕𝟐\n`;
                 await zk.sendMessage( zk.user.id, { text: cmsg });
                 }
             }
