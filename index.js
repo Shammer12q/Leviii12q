@@ -859,8 +859,8 @@ ${metadata.desc}\n\n> POWERED BY BELTAH TECH TEAM.`;
     𝗠𝗼𝗱𝗲 :${md} mode
     𝗖𝗿𝗲𝗮𝘁𝗼𝗿 : 𝗕𝗲𝗹𝘁𝗮𝗵 𝗧𝗲𝗰𝗵🇰🇪  
 
-    Follow our channel...
-    https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F
+𝐅𝐎𝐋𝐋𝐎𝐖 𝐎𝐔𝐑 𝐂𝐇𝐀𝐍𝐍𝐄𝐋
+> https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F
 \n`;
                 await zk.sendMessage( zk.user.id, { text: cmsg });
                 }
