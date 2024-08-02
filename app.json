@@ -1,6 +1,6 @@
 {
-  "name": "RIFFLE-MD",
-  "description": "RIFFLE-MD was developed by Beltah.",
+  "name": "SCENE-MD-V2",
+  "description": "SCENE-MD-V2 was developed by Beltah.",
   "keywords": [
     "bot",
     "node",
@@ -8,7 +8,7 @@
     "whatsapp"
   ],
   "logo": "https://telegra.ph/file/305827be2080296d1ab2d.jpg",
-  "repository": "https://github.com/Beltahmod2/RIFFLE-MD",
+  "repository": "https://github.com/Beltahmod2/SCENE-MD-V2",
   "succes_url": "/",
   "stack": "container",
   "env": {
@@ -34,12 +34,12 @@
     },
     "BOT_NAME": {
       "description": "put A name for your bot",
-      "value": "SCENE-MD",
+      "value": "SCENE-MD-V2",
       "required": false
     },
     "BOT_MENU_LINKS": {
       "description": "add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value": "https://telegra.ph/file/305827be2080296d1ab2d.jpg",
+      "value": "https://telegra.ph/file/59220997bc21efc764b6e.jpg",
       "required": false
     },
     "PUBLIC_MODE": {
