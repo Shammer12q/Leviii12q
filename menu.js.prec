@@ -19,10 +19,10 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
         coms[com.categorie] = []; coms[com.categorie].push(com.nomCom); });
     const temps = moment(moment()).format("HH:MM:SS");
     moment.tz.setDefault('asia/karachi ').locale("id");
-    const date = moment.tz("asia/karachi").format("DD/MM/YYYY");
+    const date = moment.tz("Africa/Nairobi").format("DD/MM/YYYY");
     console.log("date" + date);
     console.log("temps " + temps);
-    let menuMsg = "  ╩═══ * Ƶ𝓞ｋØ𝓊 * ╩═══\n\n";
+    let menuMsg = "  ╩═══ *SCENE-MD-V2* ╩═══\n\n";
     /*menuMsg+=`
     
     
