@@ -25,14 +25,14 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
         coms[com.categorie].push(com.nomCom);
     });
 
-    moment.tz.setDefault('Etc/GMT');
+    moment.tz.setDefault('Africa/Nairobi');
 
 // Créer une date et une heure en GMT
 const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-╭────✧𝐒𝐂𝐄𝐍𝐄-𝐌𝐃-𝐕𝟐✧────◆
+╭────✧ 𝐒𝐂𝐄𝐍𝐄-𝐌𝐃-𝐕𝟐 ✧────◆
 ┃๏╭───────────
 ┃๏│▸ 𝗢𝘄𝗻𝗲𝗿 : *${s.OWNER_NAME}*
 ┃๏│▸ 𝗣𝗿𝗲𝗳𝗶𝘅 : *[ ${s.PREFIXE} ]* 
@@ -43,13 +43,11 @@ const date = moment().format('DD/MM/YYYY');
 ┃๏│▸ 𝗧𝗼𝘁𝗮𝗹 𝗥𝗮𝗺 : *${format(os.totalmem())}*
 ┃๏│▸ 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : 𝗖𝗵𝗿𝗼𝗺𝗲 𝗟𝗶𝗻𝘂𝘅
 ┃๏│▸ 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 : 𝗕𝗲𝗹𝘁𝗮𝗵-𝗧𝗲𝗰𝗵-𝟮𝟱𝟰
+┃๏│▸  ©𝐕𝐄𝐑𝐒𝐈𝐎𝐍 𝟐𝟎𝟐𝟒 𝐋𝐈𝐓𝐄
 ┃๏└───────────···▸
 ╰──────────────┈⊷`;
 let menuMsg = `
-𝐇𝐨𝐰 𝐚𝐫𝐞 𝐲𝐨𝐮 ${nomAuteurMessage}
-
-*List of commands*
-◇                             ◇
+𝐇𝐨𝐰 𝐚𝐫𝐞 𝐲𝐨𝐮 ${nomAuteurMessage}\n${readmore}
 `;
  for (const cat in coms) {
         menuMsg += `
@@ -67,13 +65,8 @@ let menuMsg = `
 }
     
     menuMsg += `
-◇            ◇
-*»»————— ★ —————««*
-"To use a command, insert ${prefixe} followed by the command_name."
- 
-    Powered by NJUBA-MD
-                                                
-*»»————— ★ —————««*
+> 𝐒𝐂𝐄𝐍𝐄-𝐌𝐃-𝐕𝟐 𝐁𝐘 𝐁𝐄𝐋𝐓𝐀𝐇
+> ©𝐕𝐄𝐑𝐒𝐈𝐎𝐍 𝟐𝟎𝟐𝟒 𝐋𝐈𝐓𝐄
 `;
 
    var lien = mybotpic();
