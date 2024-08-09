@@ -47,7 +47,9 @@ const date = moment().format('DD/MM/YYYY');
 ┃๏└───────────···▸
 ╰──────────────┈⊷`;
 let menuMsg = `
-𝐇𝐨𝐰 𝐚𝐫𝐞 𝐲𝐨𝐮 ${nomAuteurMessage}\n${readmore}
+𝐇𝐨𝐰 𝐚𝐫𝐞 𝐲𝐨𝐮 ${nomAuteurMessage}
+
+𝐒𝐂𝐄𝐍𝐄-𝐌𝐃-𝐕𝟐 𝐁𝐘 𝐁𝐄𝐋𝐓𝐀𝐇\n${readmore}
 `;
  for (const cat in coms) {
         menuMsg += `
