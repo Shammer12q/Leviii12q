@@ -604,9 +604,7 @@ reaction: "💿"
         { 
           document: { url: audioUrl }, 
           mimetype: 'audio/mpeg', 
-          fileName: `${fileInfo.title}.mp3
-          
-          𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐒𝐂𝐄𝐍𝐄-𝐌𝐃-𝐕𝟐` 
+          fileName: `${fileInfo.title}.mp3 by Beltah` 
         }, 
         { quoted: ms }
       );
