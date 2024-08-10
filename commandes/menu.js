@@ -5,6 +5,8 @@ const { format } = require(__dirname + "/../framework/mesfonctions");
 const os = require("os");
 const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
+const more = String.fromCharCode(8206)
+const readmore = more.repeat(4001)
 
 zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
@@ -25,7 +27,7 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
         coms[com.categorie].push(com.nomCom);
     });
 
-    moment.tz.setDefault('EAT/GMT');
+    moment.tz.setDefault('Etc/GMT');
 
 // Créer une date et une heure en GMT
 const temps = moment().format('HH:mm:ss');
@@ -39,19 +41,19 @@ const date = moment().format('DD/MM/YYYY');
 ┃๏│▸ 𝗠𝗼𝗱𝗲 : *${mode}*
 ┃๏│▸ 𝗗𝗮𝘁𝗲  : *${date}* 
 ┃๏│▸ 𝗧𝗶𝗺𝗲  : *${temps}*
+┃๏│▸ 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗥𝗮𝗺 : *${format(os.totalmem() - os.freemem())}*
+┃๏│▸ 𝗧𝗼𝘁𝗮𝗹 𝗥𝗮𝗺 : *${format(os.totalmem())}*
 ┃๏│▸ 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : 𝗖𝗵𝗿𝗼𝗺𝗲 𝗟𝗶𝗻𝘂𝘅
 ┃๏│▸ 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 : 𝗕𝗲𝗹𝘁𝗮𝗵-𝗧𝗲𝗰𝗵-𝟮𝟱𝟰
 ┃๏└───────────···▸
 ╰──────────────┈⊷`;
-  let menuMsg = `
-╭───────────
+
+    let menuMsg = `╭───────────
 ┃๏│▸ 𝐇𝐨𝐰 𝐚𝐫𝐞 𝐲𝐨𝐮 😇😇:
 ┃๏│▸ ${nomAuteurMessage} 
 ╰──────────────┈⊷\n${readmore}
-
-𝐒𝐂𝐄𝐍𝐄-𝐌𝐃-𝐕𝟐 𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐒𝐄𝐂𝐓𝐈𝐎𝐍
 `;
- for (const cat in coms) {
+    for (const cat in coms) {
         menuMsg += `
 ╭──「 *${cat}* 」──┈⊷ 
 ┃╭──────────
@@ -64,17 +66,17 @@ const date = moment().format('DD/MM/YYYY');
 ┌┤
 │╰────────┈⊷  
 ╰────────────┈⊷`
-}
-    
+    }
+  
     menuMsg += `
-> 𝐒𝐂𝐄𝐍𝐄-𝐌𝐃-𝐕𝟐 𝐁𝐘 𝐁𝐄𝐋𝐓𝐀𝐇×©𝐕𝐄𝐑𝐒𝐈𝐎𝐍 𝟐𝟎𝟐𝟒 𝐋𝐈𝐓𝐄
+> 𝐒𝐂𝐄𝐍𝐄-𝐌𝐃-𝐕𝟐 𝐁𝐘 𝐁𝐄𝐋𝐓𝐀𝐇\n
 `;
 
    var lien = mybotpic();
 
    if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Zokou-MD*, développé par Djalega++" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper Beltah Tech" , gifPlayback : true }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
@@ -84,7 +86,7 @@ const date = moment().format('DD/MM/YYYY');
 // Vérification pour .jpeg ou .png
 else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Zokou-MD*, développé par Djalega++" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper Beltah Tech" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
