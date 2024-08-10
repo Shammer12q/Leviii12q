@@ -169,13 +169,13 @@ let getGroupzs = await zk.groupFetchAllParticipating();
                 .map((entry) => entry[1]);
             let anaa = groupzs.map((v) => v.id);
             let jackhuh = `*GROUPS AM IN*\n\n`
-            repondre(`You are Currently in ${anaa.length} groups, Alpha MD will send that list in a moment. . .`)
+            repondre(`You are Currently in ${anaa.length} groups, SCENE-MD-V2 will send that list in a moment. . .`)
             for (let i of anaa) {
                 let metadat = await zk.groupMetadata(i);
                
                 jackhuh += `*GROUP NAME:*- ${metadat.subject}\n`
                 jackhuh += `*MEMBERS:*- ${metadat.participants.length}\n`
-                jackhuh += `*GROUP ID:*- ${i}\n\n`
+                jackhuh += `*GROUP ID:*- ${i}\n\n> 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐒𝐂𝐄𝐍𝐄-𝐌𝐃-𝐕𝟐`
 
             }
           await repondre(jackhuh)
@@ -533,7 +533,7 @@ zokou({
         zk.sendMessage(origineMessage, InfoMess, { quoted: ms });
 
         // Send the video file using the video URL
-        zk.sendMessage(origineMessage, { video: { url: videoUrl }, caption: "╭───────────────◆\n│ *ALPHA-MD DOWNLOADER*\n╰────────────────◆", gifPlayback: false }, { quoted: ms });
+        zk.sendMessage(origineMessage, { video: { url: videoUrl }, caption: "╭───────────────◆\n│𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐒𝐂𝐄𝐍𝐄-𝐌𝐃-𝐕𝟐\n╰────────────────◆", gifPlayback: false }, { quoted: ms });
         console.log("Sending video file completed!");
 
         await ms.React('✅');
@@ -604,7 +604,9 @@ reaction: "💿"
         { 
           document: { url: audioUrl }, 
           mimetype: 'audio/mpeg', 
-          fileName: `${fileInfo.title}.mp3` 
+          fileName: `${fileInfo.title}.mp3
+          
+          𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐒𝐂𝐄𝐍𝐄-𝐌𝐃-𝐕𝟐` 
         }, 
         { quoted: ms }
       );
