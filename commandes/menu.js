@@ -25,7 +25,7 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
         coms[com.categorie].push(com.nomCom);
     });
 
-    moment.tz.setDefault('UTC/GMT');
+    moment.tz.setDefault('EAT/GMT');
 
 // Créer une date et une heure en GMT
 const temps = moment().format('HH:mm:ss');
@@ -39,8 +39,6 @@ const date = moment().format('DD/MM/YYYY');
 ┃๏│▸ 𝗠𝗼𝗱𝗲 : *${mode}*
 ┃๏│▸ 𝗗𝗮𝘁𝗲  : *${date}* 
 ┃๏│▸ 𝗧𝗶𝗺𝗲  : *${temps}*
-┃๏│▸ 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗥𝗮𝗺 : *${format(os.totalmem() - os.freemem())}*
-┃๏│▸ 𝗧𝗼𝘁𝗮𝗹 𝗥𝗮𝗺 : *${format(os.totalmem())}*
 ┃๏│▸ 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : 𝗖𝗵𝗿𝗼𝗺𝗲 𝗟𝗶𝗻𝘂𝘅
 ┃๏│▸ 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 : 𝗕𝗲𝗹𝘁𝗮𝗵-𝗧𝗲𝗰𝗵-𝟮𝟱𝟰
 ┃๏└───────────···▸
@@ -50,6 +48,7 @@ const date = moment().format('DD/MM/YYYY');
 ┃๏│▸ 𝐇𝐨𝐰 𝐚𝐫𝐞 𝐲𝐨𝐮 😇😇:
 ┃๏│▸ ${nomAuteurMessage} 
 ╰──────────────┈⊷\n${readmore}
+
 𝐒𝐂𝐄𝐍𝐄-𝐌𝐃-𝐕𝟐 𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐒𝐄𝐂𝐓𝐈𝐎𝐍
 `;
  for (const cat in coms) {
