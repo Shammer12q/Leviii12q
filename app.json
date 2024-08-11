@@ -45,12 +45,7 @@
     "PUBLIC_MODE": {
       "description": "type yes to put your bot on public mode or no to put it on private mod",
       "value": "yes",
-      "required": false
-    },
-    "CAPTION": {
-      "description": "State bots caption",
-      "value" : "Powered by SCENE-MD-V2",
-      "required": false
+      "required": false 
     },
     "HEROKU_APY_KEY": {
       "description": "insert your heroku api-key (The name you wrote at the beginning)",
