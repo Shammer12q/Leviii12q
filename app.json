@@ -7,7 +7,7 @@
     "baileys",
     "whatsapp"
   ],
-  "logo": "https://telegra.ph/file/59220997bc21efc764b6e.jpg",
+  "logo": "https://telegra.ph/file/f1ba2c02a99fb2458090d.jpg",
   "repository": "https://github.com/Beltahmod2/SCENE-MD-V",
   "succes_url": "/",
   "stack": "container",
@@ -39,17 +39,17 @@
     },
     "BOT_MENU_LINKS": {
       "description": "add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value": "https://telegra.ph/file/59220997bc21efc764b6e.jpg",
+      "value": "https://telegra.ph/file/c7760abd3ba664a2561d3.jpg,https://telegra.ph/file/94ebf0860a65451b1a45b.jpg,https://telegra.ph/file/fd83eeeb94c14d1d317ff.jpg,https://telegra.ph/file/https://telegra.ph/file/ab9677bf49d977d5a60c2.jpg",
       "required": false
     },
     "PUBLIC_MODE": {
       "description": "type yes to put your bot on public mode or no to put it on private mod",
-      "value": "no",
+      "value": "yes",
       "required": false
     },
     "HEROKU_APY_KEY": {
       "description": "insert your heroku api-key (The name you wrote at the beginning)",
-      "value" : "", 
+      "value" : "HRKU-229bf813-50dd-4c67-a817-961d6ca48fec", 
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -65,7 +65,7 @@
     "OWNER_NAME": {
       "desc": "Your Name",
       "required": false,
-      "value": "BELTAH TECH"
+      "value": "𝐁𝐞𝐥𝐭𝐚𝐡 𝐤𝐞"
     },
     "NUMERO_OWNER": {
       "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
@@ -89,7 +89,7 @@
     },
     "ANTI_DELETE_MESSAGE": {
       "description": "if you want to enable anti delete message put yes else put no",
-      "value": "yes",
+      "value": "no",
       "required": false
     },
     "PM_CHATBOT": {
