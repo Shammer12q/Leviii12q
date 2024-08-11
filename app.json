@@ -47,6 +47,11 @@
       "value": "yes",
       "required": false
     },
+    "CAPTION": {
+      "description": "State bots caption",
+      "value" : "Powered by SCENE-MD-V2",
+      "required": false
+    },
     "HEROKU_APY_KEY": {
       "description": "insert your heroku api-key (The name you wrote at the beginning)",
       "value" : "HRKU-229bf813-50dd-4c67-a817-961d6ca48fec", 
