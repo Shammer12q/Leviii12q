@@ -9,7 +9,7 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/Beltahmod2/SCENE-MD-V /root/Zokou_BOt
+RUN git clone https://github.com/Beltahmod2/V2-SCENE /root/Zokou_BOt
 WORKDIR /root/Zokou_Bot/
 
 
