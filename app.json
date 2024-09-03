@@ -1,6 +1,6 @@
 {
-  "name": "SCENE-MD-V2",
-  "description": "SCENE-MD-V2 was developed by Beltah.",
+  "name": "BELTAH-MD",
+  "description": "SCENE MD BOT was developed by Beltah.",
   "keywords": [
     "bot",
     "node",
@@ -8,7 +8,7 @@
     "whatsapp"
   ],
   "logo": "https://telegra.ph/file/f1ba2c02a99fb2458090d.jpg",
-  "repository": "https://github.com/Beltahmod2/V2-SCEND",
+  "repository": "https://github.com/Beltahke/SCENEMD",
   "succes_url": "/",
   "stack": "container",
   "env": {
@@ -39,7 +39,7 @@
     },
     "BOT_MENU_LINKS": {
       "description": "add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value": "https://telegra.ph/file/c7760abd3ba664a2561d3.jpg,https://telegra.ph/file/94ebf0860a65451b1a45b.jpg,https://telegra.ph/file/fd83eeeb94c14d1d317ff.jpg,https://telegra.ph/file/https://telegra.ph/file/ab9677bf49d977d5a60c2.jpg",
+      "value":"https://telegra.ph/file/170dc791433d9e62ea45f.mp4",
       "required": false
     },
     "PUBLIC_MODE": {
