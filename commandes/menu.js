@@ -33,9 +33,7 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
 const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD-MM-YYYY');
 
-        let menuMsg =`
- ʜᴇʟʟᴏ ${nomAuteurMessage}`;
-  let infoMsg =  `
+    let infoMsg =  `
  ❍ 𝐒𝐂𝐄𝐍𝐄-𝐌𝐃-𝐁𝐎𝐓 ❍
  
 ╭══➤ 𝐎𝐰𝐧𝐞𝐫 𝐢𝐧𝐟𝐨
@@ -49,15 +47,32 @@ const date = moment().format('DD-MM-YYYY');
 ┃❂ 𝗦𝗮𝘃𝗲𝗿 : 𝗖𝗵𝗿𝗼𝗺𝗲 𝗟𝗶𝗻𝘂𝘅
 ┃❂ 𝗕𝗼𝘁 𝗧𝘆𝗽𝗲 : 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 𝗯𝗼𝘁
 ┃❂ 𝗨𝘀𝗲𝗱 𝗥𝗮𝗺 : 𝟳𝟵 𝗚𝗕
-╰─────────────┈⊷\n${readmore}
+╰─────────────┈⊷
 
 *Follow our channel for updates*
 ➤ whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F
 *Join our public chat group* 
 ➤ chat.whatsapp.com/CQvUnqaDK4fBjgMXvFEAsI
 *Subscribe to my YouTube channel* 
-➤ youtube.com/@Beltahtech2024 
-
+➤ youtube.com/@Beltahtech2024\n${readmore}
+`;
+let menuMsg =  `
+Hello ${nomAuteurMessage}
+`;
+    
+    for (const cat in coms) {
+        menuMsg += `
+╭═══❂ *${cat}* ❂`;
+        for (const cmd of coms[cat]) {
+            menuMsg += `          
+┃ ❏  *${cmd}* `    
+        } 
+        menuMsg +=`
+╰═══════════⊷
+`
+    }
+  
+       menuMsg += `
 ╭═══❂ *Bug Menu* ❂
 ┃ ❏ *xʀᴇᴀᴄᴛ <ʀᴇᴘʟʏ ᴄʜᴀᴛ>*
 ┃ ❏ *x <ɴᴜᴍʙᴇʀ|ᴀᴍᴏᴜɴᴛ>*
@@ -72,21 +87,6 @@ const date = moment().format('DD-MM-YYYY');
 ┃ ❏ *xʟᴏᴄ2 <ᴀᴍᴏᴜɴᴛ>*
 ┃ ❏ *xʟɪsᴛ <ɴᴜᴍʙᴇʀ|ᴀᴍᴏᴜɴᴛ>*
 ╰═══════════⊷ 
-`;
-
-    for (const cat in coms) {
-        menuMsg += `
-╭═══❂ *${cat}* ❂`;
-        for (const cmd of coms[cat]) {
-            menuMsg += `          
-┃ ❏  *${cmd}* `    
-        } 
-        menuMsg +=`
-╰═══════════⊷
-`
-    }
-  
-       menuMsg += `
 ➤ 𝐁𝐨𝐭 𝐝𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫
 > 𝐀 𝐩𝐫𝐨𝐝𝐮𝐜𝐭 𝐨𝐟 𝐁𝐞𝐥𝐭𝐚𝐡 𝐓𝐞𝐜𝐡 𝐓𝐞𝐚𝐦
 > 𝐂𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 𝐁𝐞𝐥𝐭𝐚𝐡 𝐊𝐞 𝐅𝐫𝐨𝐦 𝐊𝐞𝐧𝐲𝐚 
