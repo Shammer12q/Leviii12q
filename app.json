@@ -8,7 +8,7 @@
     "whatsapp"
   ],
   "logo": "https://telegra.ph/file/f1ba2c02a99fb2458090d.jpg",
-  "repository": "https://github.com/Beltahke/SCENEMD",
+  "repository": "https://github.com/Taliahke/TALIAH-MD",
   "succes_url": "/",
   "stack": "container",
   "env": {
@@ -48,14 +48,14 @@
       "required": false 
     },
     "HEROKU_APY_KEY": {
-      "description": "insert your heroku api-key (The name you wrote at the beginning)",
-      "value" : "HRKU-229bf813-50dd-4c67-a817-961d6ca48fec", 
-      "required": true
+      "description": "insert your heroku api-key (OPTIONAL)",
+      "value" : "", 
+      "required": false
     },
     "HEROKU_APP_NAME": {
-      "description": "insert your heroku APP NAME (this is optionnal)",
+      "description": "insert your heroku APP NAME (OPTIONAL)",
       "value" : "", 
-      "required": true
+      "required": false
     },
     "SESSION_ID": {
       "description": "put your session ID , the code you receive after scanning Qr code",
