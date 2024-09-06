@@ -41,9 +41,9 @@ zokou(
               text: "🙂‍↕️", key: ms.key
       }})
   }
-)
+);
 
-zokou(
+/*zokou(
   {
     nomCom: 'runtime',
     Categorie: 'General',
