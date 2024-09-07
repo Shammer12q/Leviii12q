@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const { zokou } = require("../framework/zokou");
-zokou({ nomCom: "repo", reaction: "🌟", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "script", reaction: "🌟", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
 
 
 const githubRepo = 'https://api.github.com/repos/Beltahmd/beltah-md';
@@ -36,7 +36,7 @@ wa.me/254114141192
 𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 :
 www.youtube.com/@Beltahtech2024
 __________________________________
-      Made on Earth by Beltah tech`;
+> 𝐌𝐚𝐝𝐞 𝐨𝐧 𝐄𝐚𝐫𝐭𝐡 𝐛𝐲 𝐁𝐞𝐥𝐭𝐚𝐡 𝐭𝐞𝐜𝐡 `;
 
 
 await zk.sendMessage(dest, { image: { url: img }, caption: gitdata });
