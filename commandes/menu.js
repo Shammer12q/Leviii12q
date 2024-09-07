@@ -54,13 +54,11 @@ const date = moment().format('DD-MM-YYYY');
 *Join our public chat group* 
 ➤ chat.whatsapp.com/CQvUnqaDK4fBjgMXvFEAsI
 *Subscribe to my YouTube channel* 
-➤ youtube.com/@Beltahtech2024\n${readmore}
-`;
+➤ youtube.com/@Beltahtech2024`;
 let menuMsg =  `
-Hello ${nomAuteurMessage}
+Hello ${nomAuteurMessage} \n${readmore}
 `;
-    
-    for (const cat in coms) {
+      for (const cat in coms) {
         menuMsg += `
 ╭═══❂ *${cat}* ❂`;
         for (const cmd of coms[cat]) {
