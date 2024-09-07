@@ -1,4 +1,7 @@
-const { zokou } = require("../framework/zokou");
+
+const {
+  zokou
+} = require("./../framework/zokou");
 const yts = require('yt-search');
 const BaseUrl = 'https://api.giftedtechnexus.co.ke';
 const giftedapikey = 'giftedtechk'; /* For unlimited/premium api keys -----> t.me/mouricedevs */
