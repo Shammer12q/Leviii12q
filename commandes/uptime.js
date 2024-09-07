@@ -42,32 +42,3 @@ zokou(
       }})
   }
 );
-
-/*zokou(
-  {
-    nomCom: 'runtime',
-    Categorie: 'General',
-    reaction: '🗿',
-    alias: ['u']
-  },
-  async (dest, zk, commandOptions) => {
-    const {
-      ms
-    } = commandOptions;
-    const tumbUrl = 'whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F';
-    const runtimetext = `*SCENE-MD-V3*\n*Bot Have Been Running For ${runtime(process.uptime())}* `;
-    zk.sendMessage(dest, {
-      text: runtimetext,
-      contextInfo: {
-        externalAdReply: {
-          fromMe: true,
-          title: `BELTAH TECH 254 🇰🇪`,
-          body: `「 RUNTIME 」`,
-          thumbnailUrl: tumbUrl,
-        }
-      }
-    }, {
-      quoted: ms
-    })
-  }
-);*\
