@@ -24,8 +24,8 @@ zokou({
     if (videos.length > 0) {
       const video = videos[0];
       const songDetails = {
-      image: { url: "" },
-         caption: `_SCENE-MD is downloading *${video.title}* _. `
+        image: { url: video.thumbnail },
+    caption: ` *_SCENE-MD IS DOWNLOADING..._* *${video.title}*\n\n╭────────────────\n│ ©𝟐𝟎𝟐𝟒 𝐁𝐄𝐋𝐓𝐀𝐇 𝐓𝐄𝐂𝐇 𝟐𝟓𝟒 🇰🇪\n╰─────────────────◆ `
       };
 
       zk.sendMessage(origineMessage, songDetails, { quoted: commandeOptions.ms });
@@ -78,7 +78,7 @@ zokou({
       const video = videos[0];
       const videoDetails = {
       image: { url: video.thumbnail },
-        caption: `SCENE-MD is downloading ${video.title}.`
+        caption: `*_SCENE-MD IS DOWNLOADING..._* *${video.title}* .\n\n╭────────────────◆\n│ ©𝟐𝟎𝟐𝟒 𝐁𝐄𝐋𝐓𝐀𝐇 𝐓𝐄𝐂𝐇 𝟐𝟓𝟒 🇰🇪\n╰─────────────────◆`
       };
 
       zk.sendMessage(origineMessage, videoDetails, { quoted: commandeOptions.ms });
