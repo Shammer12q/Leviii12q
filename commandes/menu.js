@@ -27,7 +27,7 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
         coms[com.categorie].push(com.nomCom);
     });
 
-    moment.tz.setDefault('Eat/GMT');
+    moment.tz.setDefault('Africa/Nairobi');
 
 // Créer une date et une heure en GMT
 const temps = moment().format('HH:mm:ss');
@@ -59,18 +59,21 @@ let menuMsg =  `
 `;
     for (const cat in coms) {
         menuMsg += `
-╭═══❂ *${cat}* ❂`;
+╭═══❂ *${cat}* ❂
+┃╭═════════`;
         for (const cmd of coms[cat]) {
             menuMsg += `          
 ┃❏➤  *${cmd}* `    
         } 
         menuMsg +=`
+┃╰════════
 ╰═══════════⊷
 `
     }
   
        menuMsg += `
 ╭═══❂ *Bug Menu* ❂
+┃╭════════
 ┃❏➤ *xʀᴇᴀᴄᴛ <ʀᴇᴘʟʏ ᴄʜᴀᴛ>*
 ┃❏➤ *x <ɴᴜᴍʙᴇʀ|ᴀᴍᴏᴜɴᴛ>*
 ┃❏➤ *x2 <ᴀᴍᴏᴜɴᴛ>*
@@ -83,6 +86,7 @@ let menuMsg =  `
 ┃❏➤ *xʟᴏᴄ <ɴᴜᴍʙᴇʀ|ᴀᴍᴏᴜɴᴛ>*
 ┃❏➤ *xʟᴏᴄ2 <ᴀᴍᴏᴜɴᴛ>*
 ┃❏➤ *xʟɪsᴛ <ɴᴜᴍʙᴇʀ|ᴀᴍᴏᴜɴᴛ>*
+┃╰──════════
 ╰═══════════⊷ 
 ➤ 𝐁𝐨𝐭 𝐝𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫
 > 𝐀 𝐩𝐫𝐨𝐝𝐮𝐜𝐭 𝐨𝐟 𝐁𝐞𝐥𝐭𝐚𝐡 𝐓𝐞𝐜𝐡 𝐓𝐞𝐚𝐦
