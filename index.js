@@ -853,15 +853,14 @@ ${metadata.desc}\n\n> POWERED BY BELTAH TECH TEAM.`;
                 await activateCrons();
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
-                let cmsg = `𝐒𝐂𝐄𝐍𝐄-𝐌𝐃-𝐕𝟐 𝐈𝐒 𝐎𝐍𝐋𝐈𝐍𝐄 ⏳
+                let cmsg = `SCENE-MD IS CONNECTED
     
-    𝗣𝗿𝗲𝗳𝗶𝘅 : [ ${prefixe} ]
-    𝗠𝗼𝗱𝗲 :${md} mode
-    𝗖𝗿𝗲𝗮𝘁𝗼𝗿 : 𝗕𝗲𝗹𝘁𝗮𝗵 𝗧𝗲𝗰𝗵🇰🇪  
-
-𝐅𝐎𝐋𝐋𝐎𝐖 𝐎𝐔𝐑 𝐂𝐇𝐀𝐍𝐍𝐄𝐋
-> https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F
-\n`;
+    Prefix : [ ${prefixe} ]
+    Mode :${md} mode
+    Creator : Beltah Tech🇰🇪
+    
+ Support by Subscribing 
+ youtube.com/@Beltahtech2024 `;
                 await zk.sendMessage( zk.user.id, { text: cmsg });
                 }
             }
