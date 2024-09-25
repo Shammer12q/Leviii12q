@@ -24,7 +24,8 @@ zokou({
     if (videos.length > 0) {
       const video = videos[0];
       const songDetails = {
-         caption: `A moment SCENE-MD is downloading ${video.title} by ${videos[0].author.name}. `
+        image: { url:  },
+         caption: `SCENE-MD is downloading ${video.title}. `
       };
 
       zk.sendMessage(origineMessage, songDetails, { quoted: commandeOptions.ms });
@@ -76,7 +77,8 @@ zokou({
     if (videos.length > 0) {
       const video = videos[0];
       const videoDetails = {
-        caption: `A moment SCENE-MD is downloading ${video.title} by ${videos[0].author.name}.`
+        image: { url:  }, 
+        caption: `SCENE-MD is downloading ${video.title}.`
       };
 
       zk.sendMessage(origineMessage, videoDetails, { quoted: commandeOptions.ms });
