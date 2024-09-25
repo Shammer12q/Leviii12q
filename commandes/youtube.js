@@ -24,7 +24,7 @@ zokou({
     if (videos.length > 0) {
       const video = videos[0];
       const songDetails = {
-        image: { url:  },
+      image: { url: video.thumbnail },
          caption: `SCENE-MD is downloading ${video.title}. `
       };
 
@@ -77,7 +77,7 @@ zokou({
     if (videos.length > 0) {
       const video = videos[0];
       const videoDetails = {
-        image: { url:  }, 
+      image: { url: video.thumbnail },
         caption: `SCENE-MD is downloading ${video.title}.`
       };
 
