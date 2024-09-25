@@ -16,13 +16,13 @@ const alive = async (m, Matrix) => {
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
   const text = m.body.slice(prefix.length + cmd.length).trim();
 
-  zokou(
-  {
-    nomCom: 'uptime',
-    categorie: 'General',
-    reaction: '🏏',
-    alias: ['a']
-  },
+  zokou({ nomCom: 'upntime',
+    desc: 'To check runtime',    
+    Categorie: 'General',
+    reaction: '⏲️', 
+    fromMe: 'true', 
+
+ },
     {
     const width = 800;
     const height = 500;
