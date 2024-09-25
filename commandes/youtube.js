@@ -24,8 +24,8 @@ zokou({
     if (videos.length > 0) {
       const video = videos[0];
       const songDetails = {
-      image: { url: video.thumbnail },
-         caption: `SCENE-MD is downloading ${video.title}. `
+      image: { url: "" },
+         caption: `_SCENE-MD is downloading *${video.title}* _. `
       };
 
       zk.sendMessage(origineMessage, songDetails, { quoted: commandeOptions.ms });
