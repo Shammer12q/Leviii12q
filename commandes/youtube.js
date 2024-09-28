@@ -25,12 +25,12 @@ zokou({
       const video = videos[0];
       const songDetails = {
         image: { url: video.thumbnail },
-    caption: ` *_SCENE-MD IS DOWNLOADING..._* *${video.title}*\n\n╭────────────────\n│ ©𝟐𝟎𝟐𝟒 𝐁𝐄𝐋𝐓𝐀𝐇 𝐓𝐄𝐂𝐇 𝟐𝟓𝟒 🇰🇪\n╰─────────────────◆ `
+    caption: ` *_SCENE-MD IS DOWNLOADING..._* *${video.title}*\n\n> ©𝟐𝟎𝟐𝟒 𝐁𝐄𝐋𝐓𝐀𝐇 𝐓𝐄𝐂𝐇 𝟐𝟓𝟒 🇰🇪 `
       };
 
       zk.sendMessage(origineMessage, songDetails, { quoted: commandeOptions.ms });
 
-      const response = await axios.get(`https://api.cafirexos.com/api/v1/ytmp3?url=${video.url}`, {
+      const response = await axios.get(`https://api-gifted-test-460bb726857c.herokuapp.com/api/v1/ytmp3?url=${video.url}`, {
         responseType: "stream"
       });
 
@@ -78,12 +78,12 @@ zokou({
       const video = videos[0];
       const videoDetails = {
       image: { url: video.thumbnail },
-        caption: `*_SCENE-MD IS DOWNLOADING..._* *${video.title}* .\n\n╭────────────────◆\n│ ©𝟐𝟎𝟐𝟒 𝐁𝐄𝐋𝐓𝐀𝐇 𝐓𝐄𝐂𝐇 𝟐𝟓𝟒 🇰🇪\n╰─────────────────◆`
+        caption: `*_SCENE-MD IS DOWNLOADING..._* *${video.title}* .\n\n> ©𝟐𝟎𝟐𝟒 𝐁𝐄𝐋𝐓𝐀𝐇 𝐓𝐄𝐂𝐇 𝟐𝟓𝟒 🇰🇪`
       };
 
       zk.sendMessage(origineMessage, videoDetails, { quoted: commandeOptions.ms });
 
-      const response = await axios.get(`https://api.cafirexos.com/api/v1/ytmp4?url=${video.url}`, {
+      const response = await axios.get(`https://api-gifted-test-460bb726857c.herokuapp.com/api/v1/ytmp3?url=${video.url}`, {
         responseType: "stream"
       });
 
@@ -93,7 +93,7 @@ zokou({
       fileStream.on('finish', () => {
         zk.sendMessage(origineMessage, {
           video: { url: "video.mp4" },
-          caption: "╭────────────────◆\n│ ©𝟐𝟎𝟐𝟒 𝐁𝐄𝐋𝐓𝐀𝐇 𝐓𝐄𝐂𝐇 𝟐𝟓𝟒 🇰🇪\n╰─────────────────◆",
+          caption: "> ©𝟐𝟎𝟐𝟒 𝐁𝐄𝐋𝐓𝐀𝐇 𝐓𝐄𝐂𝐇 𝟐𝟓𝟒 🇰🇪",
           gifPlayback: false
         }, { quoted: commandeOptions.ms });
       });
